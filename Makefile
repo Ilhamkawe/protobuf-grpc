@@ -49,8 +49,7 @@ endif
 
 .PHONY: protoc-go-gateway
 protoc-go-gateway:
-	protoc -I .\
-	./proto/hello/*.proto \
+	protoc -I . \ ./proto/hello/*.proto \
 
 
 .PHONY: protoc-openapiv2-gateway
