@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option go_package = "protogen/hello";
+
+message HelloRequest {
+  string name = 1;
+  string age = 16;
+}
+
+message HelloResponse {
+  string greet = 1;
+}
+
+service HelloService {
+  rpc SayHello(HelloRequest) returns (HelloResponse) {}
+}
+
+// how to run
+// protoc --go_out=. .\proto\hello\*.proto
