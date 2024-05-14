@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "github.com/Ilhamkawe/protobuf-grpc";
+option go_package = "github.com/Ilhamkawe/protobuf-grpc/protogen/go";
 
 message HelloRequest {
   string name = 1;
