@@ -9,10 +9,6 @@ ifeq ($(OS), Windows_NT)
 else
 	rm -fR ./protogen 
 	mkdir -p ./protogen/go
-	cd protogen
-	ls
-	cd go
-	ls
 endif
 
 
