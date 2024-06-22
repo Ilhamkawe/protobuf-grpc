@@ -13,6 +13,7 @@ message HelloResponse {
 
 service HelloService {
   rpc SayHello(HelloRequest) returns (HelloResponse) {}
+  rpc SayMenyHellos(HelloRequest) returns (stream HelloResponse){}
 }
 
 // how to run
